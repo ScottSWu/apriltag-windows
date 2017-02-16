@@ -21,12 +21,60 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="apriltag_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag16h5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag25h7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag25h9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag36artoolkit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag36h10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag36h11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apriltag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AprilTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag25h7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag25h9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag36artoolkit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag36h10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag36h11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apriltag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apriltag_quad_thresh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag16h5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

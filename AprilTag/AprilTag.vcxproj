@@ -71,15 +71,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -142,12 +146,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="apriltag.h" />
+    <ClInclude Include="apriltag_math.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tag16h5.h" />
+    <ClInclude Include="tag25h7.h" />
+    <ClInclude Include="tag25h9.h" />
+    <ClInclude Include="tag36artoolkit.h" />
+    <ClInclude Include="tag36h10.h" />
+    <ClInclude Include="tag36h11.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="apriltag.c" />
     <ClCompile Include="AprilTag.cpp" />
+    <ClCompile Include="apriltag_quad_thresh.c" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tag16h5.c" />
+    <ClCompile Include="tag25h7.c" />
+    <ClCompile Include="tag25h9.c" />
+    <ClCompile Include="tag36artoolkit.c" />
+    <ClCompile Include="tag36h10.c" />
+    <ClCompile Include="tag36h11.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
